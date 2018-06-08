@@ -19,7 +19,7 @@ vagrant plugin install vagrant-vbguest
 <b>SETUP NOTES:</b>
 There are two ways to use this box, through ssh or using a desktop installed.
 
-As default, the desktop is used. If you dont want to use the desktop, then go to the Vagrantfile,
+As default, the desktop is used. If you do not want to use the desktop, then go to the Vagrantfile,
 and uncomment the correct config.vm.box_url address.
 
 If you previously launched the vagrant with this vagrant file, and want to switch the base box, then
@@ -31,11 +31,11 @@ vagrant box remove emane-basebox
 <b>SETUP INSTRUCTIONS:</b>
 The first step will install and configure EMANE, CORE, and all deps. This step will
 take several minutes. The next step shuts down the machine. The third step 
-restarts the machine with the correct configuation. If vagrant-vbguest is installed,
+restarts the machine with the correct configuration. If vagrant-vbguest is installed,
 then it will install the correct guest additions package as well.
 
 vagrant up  
-vagrent halt  
+vagrant halt  
 vagrant up  
 
 <b>ACCESSING VAGRANT VM:</b>
@@ -93,7 +93,7 @@ sudo ./demo-start
 ../scripts/olsrlinkview.py  
 
 From there, an Xforwarded window should pop up with nodes 1 and 2 active. GPS takes
-30 seconds to start showing psuedo locations on the right. In the left window, the nodes
+30 seconds to start showing pseudo locations on the right. In the left window, the nodes
 are all placed in the top left, these can be dragged around on the screen to see their 
 current connections. If all these work, then all of emane should be working and you can
 continue with the tutorial. Once done, shut down the demo by stopping the gui and entering 
